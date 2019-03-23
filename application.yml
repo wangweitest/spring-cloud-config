@@ -1,1 +1,14 @@
-profile=application-1.011
+spring:
+  profiles:
+    active:
+      -dev
+---
+spring:
+  profiles: dev
+    application:
+      name: microservice-config-dev
+---
+spring:
+  profiles: pre
+    application:
+      name: microservice-config-pre
