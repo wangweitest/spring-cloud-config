@@ -5,10 +5,10 @@ spring:
 ---
 spring:
   profiles: dev
-    application:
+  application:
       name: microservice-config-dev
 ---
 spring:
   profiles: pre
-    application:
+  application:
       name: microservice-config-pre
