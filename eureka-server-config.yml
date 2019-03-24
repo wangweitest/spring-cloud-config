@@ -3,10 +3,10 @@ spring:
   application:
       name: microservice-config-dev
 server:
-  port: 8764    # 指定该Eureka实例的端口
+  port: '{cipher}4533eae652d8a7aa4ec6e6bc17b35903e57d291a1f2f45f79b2bb3caaa4a80e0eb7c'    # 指定该Eureka实例的端口,同时测试一下加密
 eureka:
   instance:
-    hostname: '{cipher}4533eae652d8a7aa4ec6e6bc17b35903e57d291a1f2f45f79b2bb3caaa4a80e0eb7c'    # 指定该Eureka实例的端口,同时测试一下加密
+    hostname: eurekaservice-config
   client:
     registerWithEureka: false
     fetchRegistry: false
